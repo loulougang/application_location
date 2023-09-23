@@ -1,0 +1,44 @@
+
+.banner{
+        height: 223px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 25px;
+        margin-top: 50px;
+        position: relative;
+        
+        img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h1 {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 142.6%;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            left: 50%;
+            transform: translate(-50%, -50px);
+            @media screen and (max-width: 715px) {
+                width: 70%;
+                text-align: left;
+        
+                }
+
+        }
+        .opacity {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #0000007d;
+            top: 0;
+            left: 0;
+        }
+}

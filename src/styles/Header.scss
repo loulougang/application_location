@@ -1,0 +1,42 @@
+$color : #FF6060;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    max-width: 100px; 
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px; 
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: $color;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+    &.active{
+    text-decoration: underline;
+
+    }
+    @media screen and (max-width: 614px) {
+    font-size: 18px;
+        
+    }
+  }
+  
+  
+  

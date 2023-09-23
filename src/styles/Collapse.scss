@@ -1,0 +1,44 @@
+$color : #FF6060;
+$gray:#E3E3E3;
+
+.colapse {
+    width: 100%;
+    margin-right: 20px;
+    padding: 0;
+    margin-top: 12px;
+    @media screen and (max-width:715px) {
+        width: 100%;
+    }
+    &.equipements {
+    margin-right: 0px;
+
+    }
+    h2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        background-color: $color;
+        padding: 4px 4px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .hidden-content{
+        background-color: $gray;
+        height: auto;
+        transition: all .5;
+        &.isCollapsed{
+        overflow: hidden;
+        height: 0;
+        }
+        .content{
+            padding: 12px 12px;
+            p{
+                margin: 0;
+                color: $color;
+            }
+        }
+    }
+}

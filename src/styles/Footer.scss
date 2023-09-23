@@ -1,0 +1,23 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    position:relative;
+    padding: 20px;
+    // width: 100%;
+    
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+  
+      img {
+        width: 100px; // Ajustez la largeur de votre logo
+      }
+    }
+  
+    .copyright {
+      font-size: 14px;
+    }
+  }

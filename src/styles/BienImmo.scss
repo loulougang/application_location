@@ -1,0 +1,79 @@
+.container {
+    border-radius: 25px;
+    background: #F6F6F6;
+    width: 100%;
+    position: relative;
+    margin-top: 43px;
+    padding: 50px 0;
+    
+
+   
+    .BienImmo_items {
+        display: flex;
+        justify-content: space-evenly;
+        // gap: 18px;
+        flex-wrap: wrap;
+        .CartItem  {
+            position: relative;
+            border-radius: 10px;
+            background: #FF6060;
+            width: calc(33.33% - 30px);
+            height: 340px;
+            display: flex;
+            margin-top: 30px;
+            justify-content: end;
+            align-items: start;
+            flex-direction: column;
+            .opacity {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+                top: 0;
+                left: 0;
+                a{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+              img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                
+            }
+             h1 {
+                padding: 20px;
+                color: #F6F6F6;
+                z-index: 999;
+                font-size: 18px;
+                width: 80%;
+                *{
+                    color: #F6F6F6;
+                    text-decoration: none;
+                }
+            }
+
+             /**media query pour gerer la les dimensions de lacard pour differents ecrans*/
+          
+            // Média query pour les écrans de taille moyenne
+            @media screen and (max-width: 991px) {
+                width: calc(50% - 30px);
+            }
+        
+            // Média query pour les écrans de petite taille
+            @media screen and (max-width: 614px) {
+                width: calc(100% - 30px);
+            }
+        }
+
+
+       
+    }
+}

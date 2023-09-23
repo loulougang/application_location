@@ -1,0 +1,22 @@
+$color : #FF6060;
+$gray:#E3E3E3;
+
+.error-content {
+    position: relative;
+    width: 100%;
+    h1{
+        font-size: 200px;
+        width: 100%;
+        text-align: center;
+        color: $color;
+        font-weight: bold;
+        margin: 0;
+    }
+    p{
+        text-align: center;
+        color: $color;
+        *{
+            color: $color;
+        }
+    }
+}
